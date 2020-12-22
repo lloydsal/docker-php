@@ -22,7 +22,7 @@ This project is a base Docker environment for PHP development using a basic setu
 
 ## Access from browser
 
-Start the container using `docker-compose up -d` Then access the website using [http://myphp.local:8080](http://myphp.local:8080)
+Start the container using `docker-compose up -d` Then access the website using [http://mysite.local:8080](http://myphp.local:8080)
 
 ## PHP Container
 
