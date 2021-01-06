@@ -11,18 +11,21 @@ This project is a base Docker environment for PHP development using a basic setu
 1. PHP FPM 7.3
 2. Nginx 1.19
 3. Mysql 5.7
-4. PHP Composer Latest
+4. MemcacheD Latest
+5. PHP Composer Latest
 
 # Setup
 
-1. Add `127.0.0.1 myphp.local` to your `/etc/hosts` file
+1. Add `127.0.0.1 mysite.local` to your `/etc/hosts` file
 2. Start containers using `docker-compose up -d`
 
 # Usage
 
 ## Access from browser
 
-Start the container using `docker-compose up -d` Then access the website using [http://mysite.local:8080](http://myphp.local:8080)
+Start the container using `docker-compose up -d` Then access the website using [http://mysite.local](http://myphp.local)
+
+*note: If port 80 is being used by some other application change `"80:80"` to `8080:80` in `docker-compose.yml` and connect to [http://mysite.local:8080](http://myphp.local:8080) instead*
 
 ## PHP Container
 

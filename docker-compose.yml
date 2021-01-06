@@ -10,7 +10,7 @@ services:
   nginx:
     image: nginx:1.19
     ports:
-      - "8080:80"
+      - "80:80"
     volumes:
       - .:/var/www/html
       - .docker/nginx/nginx.conf:/etc/nginx/conf.d/site.conf
@@ -29,6 +29,11 @@ services:
       MYSQL_PASSWORD: password
     ports:
       - "33060:3306"
+
+  memcached:
+    image: memcached:latest
+    ports:
+      - "11211:11211"
 
 volumes:
   dbdata:
