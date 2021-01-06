@@ -41,6 +41,14 @@ docker-compose exec php /bin/bash
 composer install
 ```
 
+### Making a request to self
+To make a request to the own site inside the container use host `nginx`
+```
+curl 'http://nginx/index.php'
+```
+
+*This is helpful for API tests*
+
 ## Connecting to Database
 
 To connect from your host machine
